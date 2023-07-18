@@ -29,4 +29,7 @@ urlpatterns = [
     path('nosotros/', views.nosotros, name = 'nosotros'),
     #................URL APP NOTICIA...................
     path('noticias/', include('apps.noticias.urls')),
+
+    # login
+    path('usuarios/login', views.login, name='login')
 ]
