@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include # Importamos include, para poder trabajar con las urls de noticias
 from apps.noticias import views
 from . import views
+from django.contrib.auth import views as auth
 
 # URL PRINCIPAL
 
@@ -25,11 +26,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path para la url de la vista de home
     path('', views.home, name = 'home'),
-    # path tiene 3 parametros, la dirección url, la funcion de la vista(views), y name
+    # path tiene 3 parametros, la dirección url (que se escribe en el navegador), la funcion de la vista(views), y name
     path('nosotros/', views.nosotros, name = 'nosotros'),
     #................URL APP NOTICIA...................
     path('noticias/', include('apps.noticias.urls')),
 
     # login
-    path('usuarios/login', views.login, name='login')
+    # path('usuarios/login', views.login, name='login')
+    path('login',auth.LoginView.as_view(template_name ='usuarios/login.html'), name ='login'),
+    path('logout',auth.LoginView.as_view(),name='logout' ),
 ]
