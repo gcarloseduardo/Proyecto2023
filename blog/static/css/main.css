@@ -1,3 +1,11 @@
-.contenedor{
-    background-color:rgb(64, 234, 247);
+.contenedor {
+    background-color: rgb(165, 194, 244);
+}
+
+* {
+    text-align: center;
+}
+
+card {
+    text-align: center;
 }

@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{%block titulo%} nosotros {%endblock titulo%}
+{% block titulo%} nosotros {%endblock titulo%}
 
 {% block contenido%}
-<h1> Quienes Somos </h1>
-{%endblock contenido%}
+<h1>Nosotros : Quines somos pokemones </h1>
+<img src="{% static 'img/pikachu.png' %}" alt="error" height="400">
+<h2>{{ saludo }}</h2>
+<h2>{{ nombre }}</h2>
+<h2>{{ autor }}</h2>
+{% endblock contenido%}

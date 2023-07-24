@@ -1,11 +1,10 @@
-# from django.urls import path
-# from . import views
+from django.urls import path
+from . import views
 
-# app_name = "usuarios"
+app_name = 'usuarios'
 
-# # urls de app usuarios
-# urlpatterns = [
-#     path("", views.inicio, name= "inicio"),
+urlpatterns = [
 
+    path('registro/', views.Registro.as_view(), name="registro"),
 
-# ]
+]
