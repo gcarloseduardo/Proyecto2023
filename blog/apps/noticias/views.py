@@ -1,11 +1,14 @@
 from django.shortcuts import render, HttpResponse, redirect
 from .models import Noticia, Categoria, Contacto, Comentario
-
 # Create your views here.
-from .forms import ContactoForm
 
+from .forms import ContactoForm
 # importamos reverse lazy para los comentarios
 from django.urls import reverse_lazy
+
+
+# def inicio(request):
+#     return HttpResponse("<h1>HOLA MUNDO</h1> <h2> desde django</h2>")
 
 # decorador para ver las noticias solamente como usuario logueado
 from django.contrib.auth.decorators import login_required
@@ -14,7 +17,6 @@ from django.contrib.auth.decorators import login_required
 
 
 @login_required
-
 def inicio(request):
     # obtener todas las noticias y mostrar en el inicio.html
     # ctx = {}
@@ -35,7 +37,8 @@ def inicio(request):
     cat = Categoria.objects.all().order_by('nombre')
     contexto['categorias'] = cat
 
-    return render(request, "noticias/inicio.html", contexto)
+    return render(request, 'noticias/inicio.html', contexto)
+
 
 @login_required
 def Detalle_Noticias(request, pk):

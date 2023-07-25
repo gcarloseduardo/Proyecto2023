@@ -1,0 +1,35 @@
+[33mcommit 6f46e4fba6835ff096e06a16f8ba3330abcc48c5[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Carlos Gomez <gcarloseduardo@hotmail.com>
+Date:   Mon Jul 24 00:27:46 2023 -0300
+
+    clase 17-07
+
+[33mcommit 9f239f6e8e4ed5a6c705f4b6974974a82cf48d33[m[33m ([m[1;31morigin/crud[m[33m)[m
+Author: Carlos Gomez <gcarloseduardo@hotmail.com>
+Date:   Sat Jul 22 03:07:48 2023 -0300
+
+    registro
+
+[33mcommit 48013b68d3b5ffd1168b13ef0ba245172649d532[m
+Author: Carlos Gomez <gcarloseduardo@hotmail.com>
+Date:   Mon Jul 17 23:14:23 2023 -0300
+
+    login
+
+[33mcommit 723cdfd0d28da17d7bb2b19be257f5d09466e7b1[m
+Author: Carlos Gomez <gcarloseduardo@hotmail.com>
+Date:   Sun Jul 2 12:18:01 2023 -0300
+
+    Agregue app noticias
+
+[33mcommit e717d4aeff4994b7864be762ce66174418a7ec2b[m
+Author: Carlos Gomez <gcarloseduardo@hotmail.com>
+Date:   Sat Jul 1 00:48:45 2023 -0300
+
+    Integrantes Grupo 9
+
+[33mcommit 847978b918de339800e833b6b846194f93b28ea9[m
+Author: Carlos Gomez <gcarloseduardo@hotmail.com>
+Date:   Fri Jun 30 00:32:00 2023 -0300
+
+    Primer commit proyecto2023

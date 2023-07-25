@@ -17,19 +17,7 @@
 <body class="contenedor">
 
     <div>
-        <a href="{% url 'nosotros' %}"> nosotros </a>
-        <a href="{% url 'home' %}"> home </a>
-        <a href="{% url 'noticias:inicio' %}"> noticia </a>
-        <a href="{% url 'noticias:contacto' %}"> Contacto </a>
-
-        {% if user.is_authenticated %}
-        <p> Bienvenido {{ user.username }}</p>
-        <a href="{% url 'logout' %}"> cerrar sesion</a>
-        {% else %}
-        <a href="{% url 'login' %}"> iniciar sesion</a>
-        <a href="{% url 'usuarios:registro' %}">Registrar</a>
-
-        {% endif %}
+        {% include "navbar.html" %}
     </div>
 
     {% block contenido %}

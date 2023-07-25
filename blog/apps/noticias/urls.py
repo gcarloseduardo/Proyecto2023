@@ -1,12 +1,14 @@
 from django.urls import path
 from . import views
 
-app_name = "noticias"
+app_name = 'noticias'
 
-# urls de app noticias
+# Urls de app noticias
 urlpatterns = [
-    path("", views.inicio, name= "inicio"),
-# url para el detalle de la noticia por pk
+
+    path('', views.inicio, name="inicio"),
+
+    # url para el detalle de la noticia por pk
     path('detalle<int:pk>', views.Detalle_Noticias, name='detalle'),
 
     # url del formulario de contacto
@@ -14,6 +16,5 @@ urlpatterns = [
 
     # URL COMENTARIO
     path('comentario', views.Comentar_Noticia, name='comentar')
-
 
 ]
